@@ -1,0 +1,154 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<meta name="theme-color" content="#35105f">
+<title>Happy Karwa Chauth, Yogita ❤️</title>
+<style>
+  :root{--purple:#35105f;--purple2:#4b0878;--gold:#ffd77a;--pink:#ff8ba8;--cream:#fff4db}
+  *{box-sizing:border-box}
+  html{scroll-behavior:smooth}
+  body{margin:0;color:#fff8ed;font-family:Georgia,"Times New Roman",serif;background:#180c2d;overflow-x:hidden}
+  .stars,.stars:before,.stars:after{position:fixed;inset:0;pointer-events:none;content:"";background-image:radial-gradient(#fff 1px,transparent 1.5px),radial-gradient(#ffd76b 1px,transparent 1.5px),radial-gradient(#fff 1px,transparent 1.5px);background-size:97px 113px,157px 181px,223px 197px;background-position:0 0,37px 51px,88px 19px;opacity:.45;animation:twinkle 5s ease-in-out infinite alternate}
+  .stars:before{opacity:.3;transform:translateY(30px);animation-delay:1.5s}.stars:after{opacity:.25;transform:translateY(-20px);animation-delay:2.5s}
+  @keyframes twinkle{from{opacity:.15}to{opacity:.6}}
+  .hero{min-height:100svh;position:relative;display:grid;place-items:center;padding:40px 18px;background:radial-gradient(ellipse at 50% 35%,#5b1684 0%,#35105f 45%,#160a2a 100%);isolation:isolate}
+  .moon{position:absolute;top:8%;right:9%;width:clamp(70px,16vw,150px);aspect-ratio:1;border-radius:50%;background:radial-gradient(circle at 35% 30%,#fff0b5,#f6ce72 55%,#c58b43 100%);box-shadow:0 0 25px #ffd978aa,0 0 70px #e9b65c66;animation:moonfloat 7s ease-in-out infinite}
+  .moon:before,.moon:after{content:"";position:absolute;border-radius:50%;background:#d7a95c44;width:22%;height:17%;top:26%;left:24%;box-shadow:35px 25px 0 -4px #d7a95c33,14px 55px 0 -7px #d7a95c55}
+  @keyframes moonfloat{50%{transform:translateY(10px)}}
+  .hero-card{width:min(100%,560px);text-align:center;position:relative;padding:48px 24px 38px;border:1px solid #ffd77a88;border-radius:28px;background:linear-gradient(160deg,#53107aee,#260b4bee);box-shadow:0 0 45px #b650ff25,inset 0 0 30px #f4c76a0c;overflow:hidden}
+  .eyebrow{font:700 12px/1.4 Arial,sans-serif;letter-spacing:.22em;text-transform:uppercase;color:var(--gold)}
+  h1{font-size:clamp(36px,9vw,62px);line-height:1.05;margin:18px 0 10px;color:#fff1c7;font-style:italic;text-shadow:0 2px 16px #ffc65d45}
+  .to{margin:16px 0 0;font:14px Arial,sans-serif;letter-spacing:.2em;color:#f5d9ff}
+  .name{font-size:clamp(32px,7vw,46px);margin:5px 0 22px}
+  .moonrise{display:inline-block;background:var(--cream);color:#35105f;border-radius:12px;padding:12px 16px;margin:8px auto 22px;font:600 14px Arial,sans-serif;box-shadow:0 4px 0 #d6a64d}
+  .moonrise small{display:block;color:#a13d67;font-size:10px;letter-spacing:.1em;margin-bottom:5px}
+  .moonrise strong{font-size:17px}
+  .countdown{color:#187c75;font-weight:800}
+  .couple{margin:18px auto 8px;width:min(80%,280px);height:190px;position:relative}
+  .person{position:absolute;bottom:0;width:100px;height:145px;border-radius:48% 48% 8px 8px;background:linear-gradient(90deg,#7e132a,#d13d44,#7e132a);left:calc(50% - 86px);clip-path:polygon(24% 0,76% 0,100% 100%,0 100%)}
+  .person:before{content:"";position:absolute;width:52px;height:58px;border-radius:48%;background:#b97753;top:-35px;left:24px;border:5px solid #23162a}
+  .person.woman{left:calc(50% - 5px);width:104px;height:120px;background:linear-gradient(90deg,#a83b16,#ff9b4e,#a83b16);clip-path:polygon(30% 0,70% 0,100% 100%,0 100%)}
+  .person.woman:before{background:#b97753;border-color:#211329;width:52px;height:56px;top:-35px;left:24px}
+  .sparkle{position:absolute;color:#ffdf68;font-size:20px;animation:float 3s ease-in-out infinite}
+  .sparkle:nth-child(1){left:9%;top:23%}.sparkle:nth-child(2){right:12%;top:34%;animation-delay:1s}.sparkle:nth-child(3){left:17%;bottom:18%;animation-delay:1.7s}
+  @keyframes float{50%{transform:translateY(-10px) scale(1.15)}}
+  .scroll{font:12px Arial,sans-serif;letter-spacing:.14em;color:#f9d9ff;margin-top:22px}
+  section.content{position:relative;padding:72px 18px;background:linear-gradient(180deg,#1a0b30,#2d0d4d 55%,#170a2a);text-align:center}
+  .section-inner{max-width:760px;margin:auto}
+  .script{font-style:italic;font-size:clamp(31px,7vw,48px);color:#fff0c9;margin:0 0 34px}
+  .sieve-wrap{width:min(72vw,310px);aspect-ratio:1;border-radius:50%;padding:13px;margin:0 auto 28px;background:linear-gradient(135deg,#ffdc80,#8e2a15,#ffcb55,#7a1d13);box-shadow:0 0 0 4px #f6cb5b,0 0 24px #ffb84366;position:relative}
+  .sieve{height:100%;border-radius:50%;border:9px solid #8d241c;outline:2px solid #ffd86e;background:repeating-linear-gradient(45deg,#f8dfa755 0 2px,transparent 2px 8px),repeating-linear-gradient(-45deg,#f8dfa755 0 2px,transparent 2px 8px),#35105f;display:grid;place-items:center;overflow:hidden}
+  .sieve-moon{width:42%;aspect-ratio:1;border-radius:50%;background:#ffe8a1;box-shadow:0 0 25px #ffe4a1;transition:transform .8s}
+  .sieve-wrap.reveal .sieve-moon{transform:scale(1.14)}
+  .caption{font-style:italic;font-size:18px;color:#fff4df}
+  .button{border:0;border-radius:999px;padding:14px 24px;background:linear-gradient(90deg,#ff8ba8,#ffcb73);color:#39104e;font-weight:800;font-size:16px;cursor:pointer;box-shadow:0 5px 0 #8b3563;margin:12px 0}
+  .button:active{transform:translateY(2px);box-shadow:0 3px 0 #8b3563}
+  .promises{display:grid;gap:16px;text-align:left}
+  .promise{display:flex;gap:16px;align-items:center;padding:20px;border:1px solid #ffd77a55;background:#ffffff0a;border-radius:18px;font-size:18px;line-height:1.5}
+  .diya{font-size:30px;flex:0 0 auto;filter:drop-shadow(0 0 8px #ff9f39)}
+  .memories{display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:14px}
+  .memory{background:#fff8ee;color:#35105f;border-radius:16px;padding:10px 10px 18px;transform:rotate(-2deg);box-shadow:0 8px 22px #0003}
+  .memory:nth-child(even){transform:rotate(2deg)}
+  .photo-placeholder{min-height:180px;border-radius:10px;background:linear-gradient(145deg,#ffb8c8,#7d398d 55%,#f7ce7b);display:grid;place-items:center;color:white;font:700 14px Arial,sans-serif;text-shadow:0 2px 8px #0006;padding:12px}
+  .memory p{font-style:italic;font-size:16px;margin:12px 0 0}
+  .footer{padding:38px 18px 55px;text-align:center;background:#11071f;color:#f5d5ed}
+  .footer .heart{font-size:30px}
+  @media(max-width:420px){.hero-card{padding:38px 17px 30px}.couple{transform:scale(.9);margin-top:8px}.memories{grid-template-columns:1fr 1fr}.photo-placeholder{min-height:145px}.promise{font-size:16px;padding:16px}}
+  @media(prefers-reduced-motion:reduce){*,*:before,*:after{animation:none!important;scroll-behavior:auto!important;transition:none!important}}
+</style>
+</head>
+<body>
+<div class="stars"></div>
+<header class="hero" id="top">
+  <div class="moon" aria-hidden="true"></div>
+  <span class="sparkle">♥</span><span class="sparkle">✦</span><span class="sparkle">♥</span>
+  <div class="hero-card">
+    <div class="eyebrow">A little moonlit surprise</div>
+    <h1>Happy Karwa Chauth</h1>
+    <div class="to">TO</div>
+    <div class="name">Yogita ❤️</div>
+    <div class="moonrise">
+      <small>COUNTING DOWN TO MOONRISE</small>
+      <strong>New Delhi · 8:12 PM</strong><br>
+      <span class="countdown" id="countdown">A little moment of magic ✨</span>
+    </div>
+    <p class="caption">Through every moon, I choose you.</p>
+    <div class="couple" aria-label="Illustration of a couple dressed for a celebration">
+      <div class="person"></div><div class="person woman"></div>
+    </div>
+    <p class="caption">One moon. One wish. You. 🌙</p>
+    <a class="button" href="#promises" style="display:inline-block;text-decoration:none">Open your little surprise ↓</a>
+  </div>
+  <div class="scroll" style="position:absolute;bottom:18px">SCROLL FOR YOUR SURPRISE</div>
+</header>
+
+<section class="content" id="moon">
+  <div class="section-inner">
+    <h2 class="script">Through every moon,<br>I choose you.</h2>
+    <div class="sieve-wrap" id="sieve">
+      <div class="sieve"><div class="sieve-moon"></div></div>
+    </div>
+    <p class="caption" id="moonCaption">A little moon, a little magic, and a wish made just for you. 🌕</p>
+    <button class="button" id="revealMoon">Reveal the moon ✨</button>
+  </div>
+</section>
+
+<section class="content" id="promises">
+  <div class="section-inner">
+    <h2 class="script">Three little promises</h2>
+    <div class="promises">
+      <div class="promise"><span class="diya">🪔</span><span>I promise to care for you, today and every day.</span></div>
+      <div class="promise"><span class="diya">❤️</span><span>I promise to hold your hand through every joy and every challenge.</span></div>
+      <div class="promise"><span class="diya">🪔</span><span>I promise to keep making time for us, no matter how busy life gets.</span></div>
+    </div>
+  </div>
+</section>
+
+<section class="content" id="memories">
+  <div class="section-inner">
+    <h2 class="script">Our little memories</h2>
+    <p class="caption">Every ordinary moment becomes special with you.</p>
+    <div class="memories">
+      <div class="memory"><div class="photo-placeholder">Add your favourite photo here 📸</div><p>My moon, my everything 🌕</p></div>
+      <div class="memory"><div class="photo-placeholder">A favourite memory ❤️</div><p>My safest place is beside you.</p></div>
+      <div class="memory"><div class="photo-placeholder">One more lovely moment ✨</div><p>More memories, hand in hand.</p></div>
+      <div class="memory"><div class="photo-placeholder">Our story continues 💕</div><p>Forever and always.</p></div>
+    </div>
+    <p class="caption" style="margin-top:34px">Want to add your own photos? Upload them to this repository and replace each photo placeholder with an image.</p>
+  </div>
+</section>
+
+<footer class="footer">
+  <div class="heart">❤️🌙❤️</div>
+  <p>Made with love, especially for Yogita.</p>
+  <a href="#top" style="color:#ffd77a">Back to the moon ↑</a>
+</footer>
+<script>
+  // Set a target date/time for the next New Delhi moonrise.
+  // Change the date below if you're using this page in a different year.
+  const target = new Date("2026-10-29T20:12:00+05:30").getTime();
+  const countdown = document.getElementById("countdown");
+  function updateCountdown(){
+    const now = Date.now();
+    const diff = target - now;
+    if(diff <= 0){ countdown.textContent = "The moon is here — make a wish 🌕"; return; }
+    const hours = Math.floor(diff / 3600000);
+    const minutes = Math.floor((diff % 3600000) / 60000);
+    const seconds = Math.floor((diff % 60000) / 1000);
+    countdown.textContent = `${hours}h ${minutes}m ${seconds}s`;
+  }
+  updateCountdown();
+  setInterval(updateCountdown, 1000);
+
+  document.getElementById("revealMoon").addEventListener("click", () => {
+    document.getElementById("sieve").classList.toggle("reveal");
+    const caption = document.getElementById("moonCaption");
+    caption.textContent = caption.textContent.includes("I made a wish")
+      ? "A little moon, a little magic, and a wish made just for you. 🌕"
+      : "I made a wish, and somehow it led me to you. ❤️";
+  });
+</script>
+</body>
+</html>
